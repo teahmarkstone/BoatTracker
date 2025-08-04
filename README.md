@@ -129,13 +129,19 @@ arduino.close_connection()
 ## File Structure
 
 ```
-├── atr_and_track.py    # Main application and BoatATR class
-├── arduino.py          # Arduino serial communication
-├── camera.py           # Camera capture and zoom control
-├── classifier.py       # YOLO detection and annotation
-├── tracker.py          # PID-based tracking controller
-├── pid.py              # PID controller implementation
-└── best.pt             # Trained YOLO model (not included)
+├── src/
+|   ├── atr_and_track.py            # Main application and BoatATR class
+|   ├── arduino.py                  # Arduino serial communication
+|   ├── camera.py                   # Camera capture and zoom control
+|   ├── classifier.py               # YOLO detection and annotation
+|   ├── tracker.py                  # PID-based tracking controller
+|   ├── pid.py                      # PID controller implementation
+├── arduino/
+|   ├── arduinoSerialConnection.ino # Arduino-side connection and message handling
+├── models/
+|   ├── best.pt                     # Trained YOLO model
+├── media/                          # Demo images
+└── README.md
 ```
 
 ## Customization

@@ -5,7 +5,7 @@ A real-time computer vision system for automatic boat detection, tracking, and f
 ## Overview
 
 This system combines YOLO object detection with PID control to automatically track boats in real-time video feeds. When a boat is detected, the system uses a PTZ camera to keep the target centered in the frame, automatically adjusting pan, tilt, and zoom parameters. If the target is lost, the system enters a sweep search mode to relocate it.
-
+![Boat Tracking Demo](media/Demo_2.png)
 ## Features
 
 - **Real-time boat detection** using YOLOv11 deep learning model
